@@ -47,7 +47,7 @@ logistics-sql-analysis/
 │
 ├── Logistics_Database_Analysis.sql       # All 10 queries (8 sections)
 │
-├── results/
+├── query_outputs/
 │   ├── DRIVER_PERFORMANCE_ANALYSIS.csv
 │   ├── FLEET_UTILIZATION_ANALYSIS.csv
 │   ├── MAINTENANCE_ANALYSIS.csv
@@ -59,6 +59,8 @@ logistics-sql-analysis/
 │   ├── 6a_Revenue_by_customer_type.csv
 │   └── 6b_Service_levels_by_customer_type.csv
 │
+├── images/
+|
 └── README.md
 ```
 
