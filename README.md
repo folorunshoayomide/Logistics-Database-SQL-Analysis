@@ -11,9 +11,9 @@
 
 End-to-end SQL analysis of a simulated logistics company covering **8 analytical domains**: driver performance, route profitability, fleet utilization, maintenance, fuel efficiency, customer analysis, safety metrics, and seasonal patterns.
 
-The goal was to surface actionable operational insights from raw transactional data using advanced SQL — including window functions, CTEs, ROLLUP, CASE WHEN, weighted aggregations, and multi-table JOINs.
+The goal was to surface actionable operational insights from raw transactional data using SQL.
 
-This project was built entirely from scratch — I downloaded the raw data tables, set up a local PostgreSQL database, imported each table manually, defined relationships, and wrote all queries from the ground up
+This project was built entirely from scratch —  the raw data tables were downloaded, a local PostgreSQL database was set up, imported each table manually, defined relationships, and all queries written from the ground up
 
 ---
 
@@ -271,31 +271,4 @@ ORDER BY overall_on_time_rate DESC NULLS LAST;
 
 ---
 
-## 🛠️ Known SQL Issues / Notes
-
-> **Section 3 (Fleet Utilization):** The query contains a minor syntax error — a missing closing parenthesis on the `revenue_per_mile` calculation and a trailing comma before `FROM`. This was noted during analysis; the result set was produced correctly after correction.
-
-```sql
--- Original (error)
-ROUND(SUM(tum.total_revenue)
-      / NULLIF(SUM(tum.total_miles), 0),    AS revenue_per_mile  -- ← missing closing )
-
--- Corrected
-ROUND(SUM(tum.total_revenue)
-      / NULLIF(SUM(tum.total_miles), 0), 2) AS revenue_per_mile
-```
-
----
-
-## 🔭 Next Steps / Extensions
-
-- [ ] Add a **Power BI dashboard** visualising route profitability, driver rankings, and seasonal trends
-- [ ] Build a **driver performance tier model** (Top / Mid / At-Risk) using NTILE() window function
-- [ ] Use **LAG()** to calculate month-over-month revenue change in the seasonal analysis
-- [ ] Add **RANK() / DENSE_RANK()** to formally rank routes by profitability and drivers by composite score
-- [ ] Join safety incidents to driver IDs to identify **drivers with recurring incidents**
-- [ ] Calculate **cost per available mile (CPAM)** using idle + active trucks together
-
----
-
-*Project by Ayomide Folorunsho | GitHub: folorunshoayomide | LinkedIn/Twitter: @folorunshoayomide5*
+ide | LinkedIn/Twitter: @folorunshoayomide5*
