@@ -33,16 +33,12 @@ The dataset was imported into PostgreSQL and analysed using SQL.
 4. Verified table relationships and data integrity
 5. Wrote and executed all queries in pgAdmin
 
-## Database Schema
-
-![Database Schema](images/database_schema.png)
 ---
-
-
 
 ## 📁 Project Structure
 
 ```
+
 logistics-sql-analysis/
 │
 ├── Logistics_Database_Analysis.sql       # All 10 queries (8 sections)
@@ -62,11 +58,10 @@ logistics-sql-analysis/
 ├── images/
 |
 └── README.md
+
 ```
 
----
-
-## 🗃️ Database Schema (Key Tables)
+## 🗃️ Database Schema 
 
 | Table | Description |
 |---|---|
@@ -84,6 +79,9 @@ logistics-sql-analysis/
 | `safety_incidents` | Accidents, violations, damage costs |
 | `trailers` | Trailer inventory, types, status |
 | `facilities` | Terminal and warehouse locations, capacity |
+
+![Database Schema](images/database_schema.png)
+
 ---
 
 ## 🔍 SQL Techniques Used
@@ -101,6 +99,41 @@ logistics-sql-analysis/
 | `COUNT(DISTINCT ...)` | Section 6a |
 | Subquery in `SELECT` clause | Section 7 |
 | `NULLS LAST` in `ORDER BY` | Sections 1, 3, 4 |
+
+---
+
+## Sample SQL Query
+
+```sql
+
+-- ====================================================================================
+-- SECTION 1: DRIVER PERFORMANCE ANALYSIS
+-- Description: Evaluating drivers based on reliability, fuel efficiency, and revenue.
+-- Tables Used: drivers (drv), driver_monthly_metrics (dmm)
+-- Metrics:
+--        1: Weighted On-Time Delivery Rate
+--        2: Overall Miles Per Gallon (MPG)
+--        3: Revenue Per Mile
+-- ====================================================================================
+
+SELECT
+    drv.driver_id,
+    CONCAT(drv.first_name, ' ', drv.last_name)                  AS driver_name,
+    ROUND(SUM(dmm.trips_completed * dmm.on_time_delivery_rate)
+          / NULLIF(SUM(dmm.trips_completed), 0), 4)             AS overall_on_time_rate,
+    ROUND(SUM(dmm.total_miles)
+          / NULLIF(SUM(dmm.total_fuel_gallons), 0), 4)          AS overall_mpg,
+    ROUND(SUM(dmm.total_revenue)
+          / NULLIF(SUM(dmm.total_miles), 0), 4)                 AS revenue_per_mile
+FROM drivers AS drv
+LEFT JOIN driver_monthly_metrics AS dmm
+    ON drv.driver_id = dmm.driver_id
+GROUP BY
+    drv.driver_id,
+    CONCAT(drv.first_name, ' ', drv.last_name)
+ORDER BY overall_on_time_rate DESC NULLS LAST;
+
+```
 
 ---
 
