@@ -271,4 +271,3 @@ ORDER BY overall_on_time_rate DESC NULLS LAST;
 
 ---
 
-ide | LinkedIn/Twitter: @folorunshoayomide5*
