@@ -17,6 +17,14 @@ This project was built entirely from scratch — I downloaded the raw data table
 
 ---
 
+## 🗃️ Data Source
+
+This project uses a simulated logistics dataset consisting of 14 relational tables covering fleet operations, transportation, maintenance, customer activity, fuel purchases, and safety incidents.
+
+The dataset was imported into PostgreSQL and analysed using SQL.
+
+---
+
 ## ⚙️ Database Setup
 
 1. Downloaded PostgreSQL and set up a local server
@@ -25,7 +33,12 @@ This project was built entirely from scratch — I downloaded the raw data table
 4. Verified table relationships and data integrity
 5. Wrote and executed all queries in pgAdmin
 
+## Database Schema
+
+![Database Schema](images/database_schema.png)
 ---
+
+
 
 ## 📁 Project Structure
 
@@ -100,7 +113,7 @@ logistics-sql-analysis/
 - **Revenue per mile is tightly clustered** between $2.09–$2.20, indicating uniform load pricing across the fleet.
 - **MPG ranges from 6.38–6.53** fleet-wide — very little variation, suggesting consistent truck specs or speed policies.
 
-> 💡 **Insight:** The sub-50% on-time rate across all 124 active drivers is a red flag. No driver is even close to a healthy benchmark (typically 90%+). This warrants investigation at the scheduling, dispatch, or customer-commitment level — not just driver coaching.
+> 💡 **Insight:** The consistently low on-time delivery rates observed across the active driver population suggest potential network-wide operational challenges that warrant further investigation.
 
 ---
 
@@ -125,8 +138,7 @@ logistics-sql-analysis/
 - **Revenue per mile is consistent** at $2.11–$2.19 across the entire active fleet, showing load pricing is uniform regardless of truck assignment.
 - Trucks based in **Atlanta, Denver, and Los Angeles** appear among the top utilisers.
 
-> 💡 **Insight:** The 28 inactive trucks represent significant idle capital. If each truck generates ~$2.8M/year when active, the fleet has **potentially $78M+ in unrealised annual revenue** sitting in the yard. Investigating reasons for inactivity (driver shortage, maintenance backlog, seasonal parking) is a high-priority recommendation.
-
+> 💡 **Insight:** The 28 inactive trucks represent significant idle capacity. Further investigation is required to determine whether inactivity is driven by maintenance , driver shortages, or operational constraints.
 ---
 
 ### 4. Maintenance Analysis
