@@ -1,0 +1,7 @@
+"incident_type","incident_count","pct_of_total","non_preventable","preventable","total_claim_amount","avg_claim_per_incident"
+"Accident",35,20.59,21,14,487418.14,13926.23
+"Customer Complaint",34,20.00,21,13,432491.94,12720.35
+"DOT Violation",39,22.94,21,18,581447.22,14908.90
+"Equipment Damage",35,20.59,26,9,740970.73,21170.59
+"Moving Violation",27,15.88,17,10,410843.79,15216.44
+"TOTAL",170,100.00,106,64,2653171.82,15606.89

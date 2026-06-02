@@ -1,0 +1,59 @@
+"route_id","lane_name","distance_in_miles","average_fuel_cost","average_fuel_cost_per_mile"
+"RTE00015","Philadelphia to New York",92.00,490.79,5.3347
+"RTE00010","New York to Philadelphia",92.00,487.25,5.2961
+"RTE00033","Portland to Seattle",167.00,483.38,2.8945
+"RTE00036","Las Vegas to Los Angeles",262.00,483.43,1.8451
+"RTE00047","Columbus to Philadelphia",476.00,486.15,1.0213
+"RTE00058","Kansas City to Indianapolis",519.00,487.77,0.9398
+"RTE00011","New York to Columbus",547.00,485.32,0.8872
+"RTE00022","Houston to Memphis",557.00,487.62,0.8754
+"RTE00045","Charlotte to Memphis",597.00,484.05,0.8108
+"RTE00031","Denver to Kansas City",640.00,487.36,0.7615
+"RTE00018","Philadelphia to Indianapolis",670.00,485.98,0.7253
+"RTE00013","Phoenix to Denver",673.00,487.85,0.7249
+"RTE00006","Chicago to Charlotte",675.00,487.89,0.7228
+"RTE00001","Atlanta to Chicago",677.00,484.28,0.7153
+"RTE00002","Atlanta to Miami",697.00,485.94,0.6972
+"RTE00050","Columbus to Kansas City",712.00,484.50,0.6805
+"RTE00049","Columbus to Minneapolis",720.00,483.50,0.6715
+"RTE00008","Dallas to Denver",762.00,487.59,0.6399
+"RTE00053","Kansas City to Atlanta",777.00,484.87,0.6240
+"RTE00052","Memphis to Minneapolis",804.00,490.21,0.6097
+"RTE00009","Dallas to Indianapolis",878.00,486.52,0.5541
+"RTE00057","Kansas City to Charlotte",921.00,487.44,0.5293
+"RTE00039","Minneapolis to Atlanta",1044.00,487.83,0.4673
+"RTE00017","Philadelphia to Minneapolis",1130.00,492.88,0.4362
+"RTE00024","Miami to Philadelphia",1175.00,484.33,0.4122
+"RTE00014","Phoenix to Kansas City",1204.00,491.51,0.4082
+"RTE00041","Minneapolis to Houston",1216.00,486.19,0.3998
+"RTE00035","Las Vegas to Dallas",1229.00,484.20,0.3940
+"RTE00027","Detroit to Houston",1271.00,489.59,0.3852
+"RTE00023","Miami to Dallas",1276.00,487.68,0.3822
+"RTE00019","Houston to Detroit",1271.00,483.44,0.3804
+"RTE00038","Las Vegas to Kansas City",1311.00,487.66,0.3720
+"RTE00055","Kansas City to Miami",1429.00,491.12,0.3437
+"RTE00054","Kansas City to Los Angeles",1557.00,487.79,0.3133
+"RTE00043","Charlotte to Denver",1559.00,487.29,0.3126
+"RTE00007","Dallas to New York",1576.00,488.37,0.3099
+"RTE00005","Chicago to Las Vegas",1749.00,494.49,0.2827
+"RTE00056","Kansas City to Portland",1718.00,484.95,0.2823
+"RTE00040","Minneapolis to Los Angeles",1749.00,487.20,0.2786
+"RTE00051","Memphis to Los Angeles",1840.00,485.30,0.2638
+"RTE00026","Miami to Denver",1984.00,485.45,0.2447
+"RTE00003","Chicago to Los Angeles",2003.00,489.16,0.2442
+"RTE00004","Chicago to Portland",2017.00,489.04,0.2425
+"RTE00021","Houston to Portland",2108.00,484.31,0.2297
+"RTE00030","Seattle to Indianapolis",2147.00,488.48,0.2275
+"RTE00028","Seattle to Houston",2172.00,483.75,0.2227
+"RTE00020","Houston to Seattle",2172.00,481.99,0.2219
+"RTE00046","Columbus to Los Angeles",2269.00,488.21,0.2152
+"RTE00032","Portland to Detroit",2259.00,482.44,0.2136
+"RTE00034","Portland to Columbus",2332.00,487.86,0.2092
+"RTE00048","Columbus to Portland",2332.00,485.36,0.2081
+"RTE00012","Phoenix to Philadelphia",2389.00,482.95,0.2022
+"RTE00037","Las Vegas to New York",2561.00,485.33,0.1895
+"RTE00044","Charlotte to Portland",2627.00,487.72,0.1857
+"RTE00042","Charlotte to Seattle",2623.00,484.98,0.1849
+"RTE00029","Seattle to Charlotte",2623.00,481.59,0.1836
+"RTE00016","Philadelphia to Seattle",2729.00,483.72,0.1773
+"RTE00025","Miami to Seattle",3141.00,490.30,0.1561

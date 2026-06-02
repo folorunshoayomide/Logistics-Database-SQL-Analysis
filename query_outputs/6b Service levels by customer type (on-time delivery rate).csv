@@ -1,0 +1,4 @@
+"customer_type","total_deliveries","on_time_deliveries","late_deliveries","on_time_pct","avg_detention_minutes"
+"Contract",32209,14452,17757,44.87,105.87
+"Spot",26856,12016,14840,44.74,106.99
+"Dedicated",26345,11634,14711,44.16,107.10
