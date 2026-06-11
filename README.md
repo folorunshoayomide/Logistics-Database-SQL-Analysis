@@ -1,9 +1,9 @@
 # 🚚 Logistics Database Analysis — SQL Project
 
-**Author:** Ayomide Folorunsho 
-**Database:** PostgreSQL 
-**Tools:** PostgreSQL · pgAdmin / psql 
-**Dataset Period:** January 2022 – December 2024 (36 months)
+- **Author:** Ayomide Folorunsho 
+- **Database:** PostgreSQL 
+- **Tools:** PostgreSQL · pgAdmin / psql 
+- **Dataset Period:** January 2022 – December 2024 (36 months)
 
 ---
 
